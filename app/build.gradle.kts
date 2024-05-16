@@ -84,7 +84,7 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-    
+
     // DataStore
     implementation(libs.mysql.connector.java)
     implementation(libs.mysql.connector.java.v8033)
@@ -105,26 +105,10 @@ dependencies {
     // Lifecycle
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
 
-//    // Dagger - Hilt
-//
-//        // Dagger - Hilt
-//    implementation(libs.hilt.android)
-//    kapt(libs.dagger.hilt.compiler)
-//
-//        // For instrumentation tests
-//    androidTestImplementation (libs.dagger.hilt.android.testing)
-//    kaptAndroidTest(libs.dagger.hilt.compiler)
-//
-//        // For local unit tests
-//    testImplementation(libs.dagger.hilt.android.testing)
-//    kaptTest(libs.dagger.hilt.compiler)
-//
-//
-//    implementation(libs.hilt.android.v2381)
-//    kapt(libs.hilt.android.compiler.v237)
-//    implementation(libs.androidx.hilt.lifecycle.viewmodel.v100alpha03)
-//    kapt(libs.androidx.hilt.compiler.v100)
-//    implementation(libs.androidx.hilt.navigation.compose.v100alpha03)
+    // Dagger - Hilt
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.android.compiler)
+    implementation(libs.androidx.hilt.navigation.compose)
 
     // Retrofit
     implementation(libs.retrofit)
@@ -132,6 +116,6 @@ dependencies {
     implementation(libs.converter.gson)
     implementation(libs.okhttp.v500alpha2)
 }
-    kapt {
-        correctErrorTypes = true
-    }
+kapt {
+    correctErrorTypes = true
+}
