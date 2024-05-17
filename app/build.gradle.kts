@@ -49,8 +49,8 @@ android {
     }
     kotlinOptions {
         jvmTarget = "1.8"
-        freeCompilerArgs += "-Xopt-in=kotlin.RequiresOptIn"
-        languageVersion = "1.5"
+        freeCompilerArgs += "-opt-in=kotlin.RequiresOptIn"
+        languageVersion = "1.8"
     }
     buildFeatures {
         compose = true
@@ -105,7 +105,7 @@ dependencies {
     // Lifecycle
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
 
-    // Dagger - Hilt
+//    // Dagger - Hilt
     implementation(libs.hilt.android)
     kapt(libs.hilt.android.compiler)
     implementation(libs.androidx.hilt.navigation.compose)

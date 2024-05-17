@@ -3,10 +3,10 @@ package com.example.mytestapplication.data
 import retrofit2.http.GET
 
 interface UsersApi {
-    @GET("/api/?inc=name,dob,email,picture")
+    @GET("/randomuser")
     suspend fun getUser(): User
 
     companion object{
-        var BASE_URL = "https://randomuser.me"
+        var BASE_URL = "http://10.0.0.43:8080"
     }
 }
