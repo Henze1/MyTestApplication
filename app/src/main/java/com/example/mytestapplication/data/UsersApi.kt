@@ -7,6 +7,9 @@ interface UsersApi {
     suspend fun getUser(): User
 
     companion object{
-        var BASE_URL = "http://10.0.0.43:8080"
+        //home
+//        var BASE_URL = "http://10.0.0.43:8080"
+        //picsart
+        var BASE_URL = "http://192.168.33.183:8080"
     }
 }

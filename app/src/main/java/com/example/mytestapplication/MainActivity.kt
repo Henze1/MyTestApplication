@@ -47,7 +47,6 @@ class MainActivity : ComponentActivity() {
                                 .padding(16.dp)
                                 .size(128.dp),
                             painter = loadImageFromUrl(url = user.image),
-//                            painter = loadImageFromUrl(url = "https://randomuser.me/api/portraits/men/1.jpg"),
                             contentDescription = user.name
                         )
 
